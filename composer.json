@@ -1,5 +1,5 @@
 {
-    "name": "soloproyectos-php/css",
+    "name": "soloproyectos-php/css-parser",
     "description": "A library for managing CSS expressions. This library is part of the SoloProyectos PHP API.",
     "type": "php-library",
     "license": "The MIT License (MIT)",
