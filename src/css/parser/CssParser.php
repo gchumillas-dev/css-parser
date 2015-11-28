@@ -784,12 +784,12 @@ class CssParser extends TextParser
                 $regexp = '@Content-Type:\s*([\w/+]+)(;\s*charset=(\S+))?@i';
                 if (preg_match($regexp, $line, $matches) > 0) {
                     if (strlen($mimetype) == 0) {
-                        $mimetype = Arr::is($matches, 1)
+                        $mimetype = Arr::exist($matches, 1)
                             ? $matches[1]
                             : null;
                     }
                     if (strlen($charset) == 0) {
-                        $charset = Arr::is($matches, 3)
+                        $charset = Arr::exist($matches, 3)
                             ? $matches[3]
                             : null;
                     }
