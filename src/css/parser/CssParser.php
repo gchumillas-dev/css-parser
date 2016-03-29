@@ -678,7 +678,7 @@ class CssParser extends TextParser
             );
         } while ($this->eq(","));
 
-        return new ArrayObject($nodes);
+        return new ArrayObject(Dom::sortNodes($nodes));
     }
 
     /**
