@@ -13,7 +13,7 @@
         "php": ">=5.5.0",
         "soloproyectos-php/array": "*",
         "soloproyectos-php/css": "*",
-        "soloproyectos-php/dom": "~1.0",
+        "soloproyectos-php/dom": "*",
         "soloproyectos-php/text-parser": "*"
     },
     "autoload": {
