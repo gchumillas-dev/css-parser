@@ -71,6 +71,6 @@ $items = $selector->query('item:fibonacci');
 ```
 
 You will find more examples in the source code itself:  
-https://github.com/soloproyectos-php/css-parser/blob/master/src/css/parser/CssParser.php
+[src/css/parser/CssParser.php](https://github.com/soloproyectos-php/css-parser/blob/master/src/css/parser/CssParser.php)
 
 Enjoy it!
