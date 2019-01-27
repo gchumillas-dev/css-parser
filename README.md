@@ -48,9 +48,9 @@ foreach ($items as $item) {
 }
 ```
 
-This class support different CSS Pseudo-classes such as `:odd`, `:even`, `first-child`, but you can create customs ones. In the following example we are going to create a `fibonacci` pseudo-class:
+This library supports a wide variety of CSS Pseudo-filters such as `:odd`, `:even`, `first-child`, etc. But you can create customs ones. The following example declares a `fibonacci` pseudo-filter:
 ```php
-// is node position a Fibonacci number?
+// is the position of the node a Fibonacci number?
 $css->registerPseudoFilter(
     "fibonacci", function ($node, $input, $position, $items
 ) {
@@ -65,6 +65,8 @@ $css->registerPseudoFilter(
     }
     return $isFibonacci;
 });
+
+// selects only `fibonacci` nodes
 $items = $selector->query('item:fibonacci');
 ```
 
