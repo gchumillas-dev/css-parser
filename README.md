@@ -13,8 +13,27 @@ composer require soloproyectos-php/css-parser
 
 ## Examples
 
-Selects the first and the odd elements:
+You can create instances of `CssParser` from different sources:
+```php
+// Evaluates from a DOMDocument
+$doc = new DOMDocument("1.0", "UTF-8");
+$doc->loadXML('<root><item id="101" /><item id="102" /></root>');
+$selector = new CssParser($doc);
 
+// Creates an instance from a DOMElement
+$doc = new DOMDocument("1.0", "UTF-8");
+$doc->loadXML('<root><item id="101" /><item id="102" /></root>);
+$root = $doc->documentElement;
+$selector = new CssParser($root);
+
+// Creates an instance from a file
+$selector = new CssParser('/path/to/my/document.xml');
+
+// Creates an instance from an URL
+$selector = new CssParser('http://www.my-site.com/document.xml');
+```
+
+Selects the first and the odd elements:
 ```php
 $doc = new DOMDocument("1.0", "UTF-8");
 $doc->loadXML(
