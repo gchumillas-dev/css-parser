@@ -2,7 +2,7 @@
 
 A library to evaluate CSS expressions.
 
-This library can be used to select elements from a DOM Document.
+This library can be used to select elements from a DOM Document using CSS selectors.
 
 ## Install
 
@@ -25,6 +25,6 @@ $selector = new CssSelector($doc);
 // selects the first and the odd elements and prints them
 $items = $selector->query('item:odd, item:first-child');
 foreach ($items as $item) {
-    echo Dom::dom2str($item) . "\n";
+    echo $doc->saveXML($item) . "\n";
 }
 ```
