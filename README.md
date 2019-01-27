@@ -1,2 +1,10 @@
 # css-parser
-A library for parsing CSS expressions. This library is part of the SoloProyectos PHP API.
+
+A library to evaluate CSS expressions.
+
+## Install
+
+Simply execute the following command:
+```bash
+composer require soloproyectos-php/css-parser
+```
