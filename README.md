@@ -13,7 +13,8 @@ composer require soloproyectos-php/css-parser
 
 ## Examples
 
-Selects the frist element and the 'odd' elements
+Selects the first and the odd elements:
+
 ```php
 $doc = new DOMDocument("1.0", "UTF-8");
 $doc->loadXML(
