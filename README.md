@@ -51,9 +51,7 @@ foreach ($items as $item) {
 This library supports a wide variety of CSS Pseudo-filters such as `:odd`, `:even`, `first-child`, etc. But you can create customs ones. The following example declares a `fibonacci` pseudo-filter:
 ```php
 // is the position of the node a Fibonacci number?
-$css->registerPseudoFilter(
-    "fibonacci", function ($node, $input, $position, $items
-) {
+$css->registerPseudoFilter("fibonacci", function ($node, $input, $position, $items) {
     $isFibonacci = false;
     if ($position > 0) {
         $n = sqrt(5 * pow($position, 2) + 4);
